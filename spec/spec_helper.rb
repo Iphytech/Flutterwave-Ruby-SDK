@@ -1,4 +1,4 @@
-require "bundler/setup"
+# require "bundler/setup"
 require "flutterwave_sdk"
 
 RSpec.configure do |config|

@@ -22,6 +22,7 @@ require_relative "flutterwave_sdk/flutterwave_objects/settlements"
 require_relative "flutterwave_sdk/flutterwave_objects/otp"
 require_relative "flutterwave_sdk/flutterwave_objects/virtual_account_number"
 require_relative "flutterwave_sdk/flutterwave_objects/bills"
+require_relative "flutterwave_sdk/flutterwave_objects/preauthorise"
 require_relative "flutterwave_sdk/error"
 
 class Flutterwave
