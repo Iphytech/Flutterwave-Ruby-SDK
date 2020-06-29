@@ -51,27 +51,27 @@ Payment = Flutterwave.new("YOUR_FLUTTERWAVE_LIVE_PUBLIC_KEY", "YOUR_FLUTTERWAVE_
 ```
 
 ### Flutterwave Objects
-Card.new(payment)
-AccountPayment.new(payment)
-Bank.new(payment)
-Bills.new(payment)
-BankTransfer.new(payment)
-Beneficiaries.new(payment)
-USSD.new(payment)
-Transfer.new(payment)
-VirtualCard.new(payment)
-TokenizedCharge.new(payment)
-Settlements.new(payment)
-QR.new(payment)
-Transactions.new(payment)
-VirtualAccountNumber.new(payment)
-Subscriptions.new(payment)
-OTP.new(payment)
-Subaccount.new(payment)
-PaymentPlan.new(payment)
-MobileMoney.new(payment)
-Misc.new(payment)
-Preauth.new(payment)
+- [Card.new(payment)](#cardnewpayment)
+- [AccountPayment.new(payment)](#accountpaymentnewpayment)
+- [Bank.new(payment)](#banknewpayment)
+- [Bills.new(payment)](#billsnewpayment)
+- [BankTransfer.new(payment)](banktransfernewpayment)
+- [Beneficiaries.new(payment)](#beneficiariesnewpayment)
+- [USSD.new(payment)](#ussdnewpayment)
+- [Transfer.new(payment)](#transfernewpayment)
+- [VirtualCard.new(payment)](#virtualcardnewpayment)
+- [TokenizedCharge.new(payment)](#tokenizedchargenewpayment)
+- [Settlements.new(payment)](#settlementsnewpayment)
+- [QR.new(payment)](#qrnewpayment)
+- [Transactions.new(payment)](#transactionsnewpayment)
+- [VirtualAccountNumber.new(payment)](#virtualaccountnumbernewpayment)
+- [Subscriptions.new(payment)](#subscriptionsnewpayment)
+- [OTP.new(payment)](#otpnewpayment)
+- [Subaccount.new(payment)](#subaccountnewpayment)
+- [PaymentPlan.new(payment)](#paymentplannewpayment)
+- [MobileMoney.new(payment)](#mobilemoneynewpayment)
+- [Misc.new(payment)](#miscnewpayment)
+- [Preauth.new(payment)](preauthnewpayment)
 
 ## Card.new(payment)
 
@@ -1222,6 +1222,44 @@ print response
 - .refund_preauth
 
 ## see full flow below
+
+```ruby
+require './flutterwave_sdk'
+
+# This is a Flutterwave object which is expecting public, secret and encrption keys
+payment = Flutterwave.new("FLWPUBK-xxxxxxxxx-X", "xxxxxxxxxxxxxx", "xxxxxxxxxxxxxx")
+
+# This is used to perform preauth capture
+
+auth = Preauth.new(payment)
+
+payload = {
+    "amount" => "50"
+}
+
+flw_ref = "FLW-MOCK-d6b76a67a639dc124917b8957baa5278"
+
+repsonse = auth.capture_preauth(flw_ref, payload)
+print response
+
+
+#Void
+response = auth.void_preauth(flw_ref)
+print response
+
+
+#Refund
+payload = {
+    "amount" => "30"
+}
+
+flw_ref = "FLW-MOCK-d6b76a67a639dc124917b8957baa5278"
+
+response = auth.refund_preauth(flw_ref, payload)
+print response
+
+
+```
 
 
 ## Development

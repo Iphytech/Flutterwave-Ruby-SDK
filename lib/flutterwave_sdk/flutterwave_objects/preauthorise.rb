@@ -5,8 +5,6 @@ class Preauth < Base
 
     def capture_preauth(flw_ref, data)
         base_url = flutterwave_object.base_url 
-        required_parameters = ["amount"]
-        check_passed_parameters(required_parameters, data)
         payload = data.to_json
         response = post_request("#{base_url}/charges/#{flw_ref}/capture", payload) 
         return response
@@ -21,8 +19,6 @@ class Preauth < Base
 
     def refund_preauth(flw_ref, data)
         base_url = flutterwave_object.base_url 
-        required_parameters = ["amount"]
-        check_passed_parameters(required_parameters, data)
         payload = data.to_json
         response = post_request("#{base_url}/charges/#{flw_ref}/refund", payload) 
         return response
