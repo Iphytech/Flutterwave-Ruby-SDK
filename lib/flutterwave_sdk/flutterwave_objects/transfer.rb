@@ -32,7 +32,7 @@ class Transfer < Base
         return response
     end
 
-    def get_all_transfers()
+    def get_all_transfers
         base_url = flutterwave_object.base_url
         response = get_request("#{base_url}/transfers")
         return response
