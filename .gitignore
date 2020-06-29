@@ -29,3 +29,4 @@ settlements_test.rb
 otp_test.rb
 virtual_account_number_test.rb
 bills_test.rb
+preauth_test.rb
