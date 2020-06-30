@@ -24,7 +24,7 @@ Or install it yourself as:
 
 ## Usage
 
-## Instantiate Paystack Object
+## Instantiate Flutterwave Object
 To use [Flutterwave Ruby SDK](https://ravesandbox.flutterwave.com), you need to instantiate the RaveRuby class with your [API](https://dashboard.flutterwave.com/dashboard/settings/apis) keys which are your public, secret and encryption keys. We recommend that you store your API keys in your environment variable named `FLUTTERWAVE_PUBLIC_KEY`, `FLUTTERWAVE_SECRET_KEY` and `FLUTTERWAVE_ENCRYPTION_KEY`. Instantiating your flutterwave object after adding your API keys in your environment is as illustrated below:
 
 ```ruby
