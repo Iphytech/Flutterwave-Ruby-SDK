@@ -92,7 +92,7 @@ To perform account transactions, instantiate the card object and pass Flutterwav
 ## Full Account Transaction Flow
 
 ```ruby
-require './flutterwave_sdk'
+require '.flutterwave_sdk'
 
 # This is a Flutterwave object which is expecting public, secret and encrption keys
 payment = Flutterwave.new("FLWPUBK-xxxxxxxxx-X", "FLWSECK-xxxxxxxxx-X", "xxxxxxxxxxxxxxxxxxxxxxx")
@@ -158,7 +158,7 @@ print response
 ## Full Account Transaction Flow
 
 ```ruby
-require './flutterwave_sdk'
+require 'flutterwave_sdk'
 
 # This is a Flutterwave object which is expecting public, secret and encrption keys
 payment = Flutterwave.new("FLWPUBK-xxxxxxxxx-X", "FLWSECK-xxxxxxx-X", "xxxxxxx")
@@ -206,7 +206,7 @@ print response
 
 ```ruby
 
-require './flutterwave_sdk'
+require 'flutterwave_sdk'
 
 # This is a Flutterwave object which is expecting public, secret and encrption keys
 payment = Flutterwave.new("FLWPUBK-xxxxxxxxx-X", "FLWSECK-xxxxxxxxxx-X", "xxxxxxxxx")
@@ -240,7 +240,7 @@ response = bank.get_bank_branch(280)
 ## See full flow below
 
 ```ruby
-require './flutterwave_sdk'
+require 'flutterwave_sdk'
 
 # This is a Flutterwave object which is expecting public, secret and encrption keys
 payment = Flutterwave.new("FLWPUBK_TEST-3xxxxxxxxxx-X", "FLWSECK_TEST-xxxxxxxxx-X", "xxxxxxxxxxxxx")
@@ -307,7 +307,7 @@ print response
 
 ```ruby
 
-require './flutterwave_sdk'
+require 'flutterwave_sdk'
 
 # This is a FLutterwave object which is expecting public, secret and encrption keys
 payment = Flutterwave.new("FLWPUBK-xxxxxxxxxxx-X", "FLWSECK-xxxxxxxxx-X", "xxxxxxxxxxx")
@@ -347,7 +347,7 @@ print response
 ## See full flow below
 
 ```ruby
-require './flutterwave_sdk'
+require 'flutterwave_sdk'
 
 # This is a Flutterwave object which is expecting public, secret and encrption keys
 payment = Flutterwave.new("FLWPUBK-xxxxxxxxxxx-X", "FLWSECK-xxxxxxxx-X", "xxxxxxxxxx")
@@ -390,7 +390,7 @@ print response
 
 ```ruby
 
-require './flutterwave_sdk'
+require 'flutterwave_sdk'
 
 # This is a Flutterwave object which is expecting public, secret and encrption keys
 payment = Flutterwave.new("FLWPUBK-xxxxxxx-X", "FLWSECK-xxxxxxx-X", "xxxxxx")
@@ -432,7 +432,7 @@ print response
 ```ruby
 
 
-require './flutterwave_sdk'
+require 'flutterwave_sdk'
 
 # This is a Flutterwave object which is expecting public, secret and encrption keys
 payment = Flutterwave.new("FLWPUBK-xxxxxxx-X", "FLWSECK-xxxxxxx-X", "xxxxxxxxx")
@@ -486,7 +486,7 @@ print response
 
 ```ruby
 
-require './flutterwave_sdk'
+require 'flutterwave_sdk'
 
 # This is a Flutterwave object which is expecting public, secret and encrption keys
 payment = Flutterwave.new("FLWPUBK_TEST-xxxxxxxx-X", "FLWSECK_TEST-xxxxxx-X", "xxxxxxxxx")
@@ -570,7 +570,7 @@ print response
 ## See full flow below
 
 ```ruby
-require './flutterwave_sdk'
+require 'flutterwave_sdk'
 
 # This is a Flutterwave object which is expecting public, secret and encrption keys
 payment = Flutterwave.new("FLWPUBK-xxxxxxxxxxxx-X", "FLWSECK-xxxxxxxxxx-X", "xxxxxxxxxxxxx")
@@ -677,7 +677,7 @@ print response
 ## See full flow below
 
 ```ruby
-require './flutterwave_sdk'
+require 'flutterwave_sdk'
 
 # This is a Flutterwave object which is expecting public, secret and encrption keys
 payment = Flutterwave.new("FLWPUBK_TEST-xxxxxxxxx-X", "FLWSECK_TEST-xxxxxxxxxx-X", "xxxxxxxxxxxxx")
@@ -705,7 +705,7 @@ print response
 
 ```ruby
 
-require './flutterwave_sdk'
+require 'flutterwave_sdk'
 
 # This is a FLutterwave object which is expecting public, secret and encrption keys
 payment = Flutterwave.new("FLWPUBK-xxxxxxxxxxx-X", "FLWSECK-xxxxxxxxxxxxxxx-X", "xxxxxxxxxxxxxxxx")
@@ -745,7 +745,7 @@ print response
 
 ```ruby
 
-require './flutterwave_sdk'
+require 'flutterwave_sdk'
 
 # This is a Flutterwave object which is expecting public, secret and encrption keys
 payment = Flutterwave.new("FLWPUBK-xxxxxxxxxxx-X", "FLWSECK-xxxxxxxxxxxxxxxxxx-X", "xxxxxxxxxxxxxxx")
@@ -798,7 +798,7 @@ print response
 
 ```ruby
 
-require './flutterwave_sdk'
+require 'flutterwave_sdk'
 
 # This is a Flutterwave object which is expecting public, secret and encrption keys
 payment = Flutterwave.new("FLWPUBK_TEST-xxxxxxxx-X", "FLWSECK_TEST-xxxxxxxxxx-X", "xxxxxxxxx")
@@ -850,7 +850,7 @@ print response
 # see full flow below
 
 ```ruby
-require './flutterwave_sdk'
+require 'flutterwave_sdk'
 
 # This is a Flutterwave object which is expecting public, secret and encrption keys
 payment = Flutterwave.new("FLWPUBK-xxxxxxxx-X", "FLWSECK-xxxxxxxxxx-X", "xxxxxxxxxxx")
@@ -879,7 +879,7 @@ print response
 # see full flow below
 
 ```ruby
-require './flutterwave_sdk'
+require 'flutterwave_sdk'
 
 # This is a Flutterwave object which is expecting public, secret and encrption keys
 payment = Flutterwave.new("FLWPUBK_TEST-xxxxxxxxxxxxxx-X", "FLWSECK_TEST-xxxxxxxxxxxx-X", "xxxxxxxxx")
@@ -920,7 +920,7 @@ print response
 ## see full flow below
 
 ```ruby
-require './flutterwave_sdk'
+require 'flutterwave_sdk'
 
 # This is a Flutterwave object which is expecting public, secret and encrption keys
 payment = Flutterwave.new("FLWPUBK_TEST-xxxxxxxx-X", "FLWSECK_TEST-xxxxxxxx-X", "xxxxxx")
@@ -980,7 +980,7 @@ print reponse
 ## see full flow below
 
 ```ruby
-require './flutterwave_sdk'
+require 'flutterwave_sdk'
 
 # This is a Flutterwave object which is expecting public, secret and encrption keys
 payment = Flutterwave.new("FLWPUBK-xxxxxxxxx-X", "FLWSECK-xxxxxxxxxx-X", "xxxxxxxxxxxxx")
@@ -1030,7 +1030,7 @@ print response
 ## see full flow below
 
 ```ruby
-require './flutterwave_sdk'
+require 'flutterwave_sdk'
 
 # This is a Flutterwave object which is expecting public, secret and encrption keys
 payment = Flutterwave.new("FLWPUBK-xxxxxxxxxxxxxxx-X", "FLWSECK-xxxxxxxxxxxx-X", "xxxxxxxxxx")
@@ -1179,7 +1179,7 @@ _ .get_all_wallet_balance
 ## see full flow below
 
 ```ruby
-require './flutterwave_sdk'
+require 'flutterwave_sdk'
 
 # This is a Flutterwave object which is expecting public, secret and encrption keys
 payment = Flutterwave.new("FLWPUBK-xxxxxxxxxx-X", "FLWSECK-xxxxx-X", "xxxxxxxxxxxxxxx")
@@ -1224,7 +1224,7 @@ print response
 ## see full flow below
 
 ```ruby
-require './flutterwave_sdk'
+require 'flutterwave_sdk'
 
 # This is a Flutterwave object which is expecting public, secret and encrption keys
 payment = Flutterwave.new("FLWPUBK-xxxxxxxxx-X", "xxxxxxxxxxxxxx", "xxxxxxxxxxxxxx")
