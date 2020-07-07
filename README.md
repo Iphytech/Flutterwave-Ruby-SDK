@@ -92,7 +92,7 @@ To perform account transactions, instantiate the card object and pass Flutterwav
 ## Full Account Transaction Flow
 
 ```ruby
-require '.flutterwave_sdk'
+require 'flutterwave_sdk'
 
 # This is a Flutterwave object which is expecting public, secret and encrption keys
 payment = Flutterwave.new("FLWPUBK-xxxxxxxxx-X", "FLWSECK-xxxxxxxxx-X", "xxxxxxxxxxxxxxxxxxxxxxx")
